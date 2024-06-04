@@ -17,14 +17,14 @@ def load_env_variables():
 
         return {"src_dir": source_directory, 
                 "dest_dir": destination_directory}
-    except EnvironmentError:
+    except Exception:
         print("Failed to source environment variables")
 
 
 def get_files_in_directory(variable):
     try:
         return [file for file in os.listdir(variable) if type(dir) or file.endswith('.md')]
-    except LookupError:
+    except Exception:
         print("Failed to lookup files in directory")
 
 
@@ -42,7 +42,7 @@ def compare_files():
         set_ftc = set(src_to_copy)
         set_to_copy = files_to_copy | set_ftc
         return list(set_to_copy), variables["src_dir"], variables["dest_dir"]
-    except LookupError:
+    except Exception:
         print("Failed to compare files, please check paths and directories are not empty")
 
        
@@ -63,7 +63,7 @@ def copy_selected_files_to_folder():
             elif file == ".obsidian":
                 pass
         return num
-    except RuntimeError:
+    except Exception:
         print("Failed to new copy files")
 
 
@@ -122,7 +122,7 @@ def update_data_in_files(recursive_file=False, list_dirs=None):
         
         return len(list_updated)
             
-    except LookupError:
+    except Exception:
         print("Failed to update files")
 
 def delete_files_auto():
@@ -140,7 +140,7 @@ def delete_files_auto():
 
         return list_updated
 
-    except LookupError:
+    except Exception:
         print("Failed to delete files") 
 
 def add_to_github(user_input, tc, tu, td):
