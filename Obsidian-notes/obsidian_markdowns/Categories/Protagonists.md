@@ -5,7 +5,7 @@ tags:
 ---
 [[Oda]] 
 [[Balor]]
-[[Feurach Cù-sìth]]
+[[(Feurach) Catan-cù-sìth]]
 [[Etain]]
 [[Irbhinn]]
 

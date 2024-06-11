@@ -1,0 +1,1 @@
+Huge part of the lore, anything Celtic or Gaelic = +1
