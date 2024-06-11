@@ -1,1 +1,0 @@
-Fallen angel found in the [[Ceann de dia]]
